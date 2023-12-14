@@ -1,0 +1,5 @@
+trends.build_payload(kw_list=["Machine Learning"])
+data = trends.interest_by_region()
+data = data.sort_values(by="Machine Learning", ascending=False)
+data = data.head(10)
+print(data)
